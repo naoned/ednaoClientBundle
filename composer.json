@@ -20,5 +20,8 @@
         "symfony/config": "2.3 - 3",
         "symfony/dependency-injection": "2.3 - 3",
         "naoned/ednaoClient": "dev-master@dev"
+    },
+    "autoload": {
+        "psr-0": {"EdnaoClientBundle\\": ""}
     }
 }
