@@ -1,7 +1,7 @@
 {
-    "name": "Naoned/EdnaoClientBundle",
+    "name": "naoned/ednaoClientBundle",
     "type": "symfony-bundle",
-    "description": "This package provide naoned help system for Symfony2 framework",
+    "description": "This package provides Naoned help system for Symfony2 framework",
     "license": "MIT",
     "authors": [
         {
@@ -14,20 +14,11 @@
             "url":  "git@github.com:naoned/ednaoClient.git"
         }
     ],
-    "support": {
-        "issues": "https://github.com/Maks3w/FR3DLdapBundle/issues",
-        "source": "https://github.com/Maks3w/FR3DLdapBundle"
-    },
     "require": {
         "php": ">=5.5",
         "psr/log": "~1.0",
         "symfony/config": "2.3 - 3",
         "symfony/dependency-injection": "2.3 - 3",
         "naoned/ednaoClient": "dev-master@dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "FR3D\\LdapBundle\\": ""
-        }
     }
 }
