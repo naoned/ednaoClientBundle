@@ -1,1 +1,1 @@
-../../../../ednaoClient/web/js/ednaoManager.js
+../../../../../../ednaoClient/web/js/ednaoManager.js
