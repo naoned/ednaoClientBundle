@@ -5,9 +5,23 @@ This bundle provide the edano client in symony projects
 
 # Install and config
 
-Install through composer
+To install through composer, first declare the repository :
 
 ```
+    "repositories": [
+        …
+        {
+            "type": "vcs",
+            "url":  "git@github.com:naoned/ednaoClientBundle.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:naoned/ednaoClient.git"
+        }
+```
+
+```
+composer require naoned/ednaoClient dev-master@dev
 composer require naoned/ednaoClientBundle dev-master@dev
 ```
 
