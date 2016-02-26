@@ -16,9 +16,16 @@ class IframeExtension extends \Twig_Extension
         );
     }
 
-    public function iframe()
+    public function iframe($context = null)
     {
-        $request = $this->container->get('request');
+        $context = (string) $context;
+        if (!$context) {
+            $context = $this->container->get('request')->getPathInfo();
+        }
+        if (!$context) {
+            $context = 'home';
+        }
+        $context = str_replace("/", "", $context);
         // Extract roles in an array
         $roles = array_map(function ($role) {
             return $role->getRole();
@@ -34,7 +41,7 @@ class IframeExtension extends \Twig_Extension
             $this->container->getParameter('naoned_ednao_client.version'),
             $this->container->getParameter('naoned_ednao_client.product'),
             $rolesAsKeys,
-            str_replace("/", "", $request->getPathInfo())
+            $context
         );
     }
 
