@@ -4,7 +4,7 @@ services:
     # Twig extensions
     # ================================
 
-    naoned.vanao.twig.record_extension:
+    naoned.ednao.twig.record_extension:
         class: Naoned\EdnaoClientBundle\Twig\IframeExtension
         calls:
             - [ setContainer, [@service_container]]
