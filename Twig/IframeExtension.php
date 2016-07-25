@@ -29,7 +29,7 @@ class IframeExtension extends \Twig_Extension
         // Extract roles in an array
         $roles = array_map(function ($role) {
             return $role->getRole();
-        }, $this->container->get('security.context')->getToken()->getRoles());
+        }, $this->container->get('security.token_storage')->getToken()->getRoles());
         // format roles as ednao want them
         $rolesAsKeys = array_map(function () {
             return null;
